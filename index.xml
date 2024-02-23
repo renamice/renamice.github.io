@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>rena.</title>
+    <link>https://rena.github.io/</link>
+    <description>Recent content on rena.</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright><atom:link href="https://rena.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>about</title>
+      <link>https://rena.github.io/about/</link>
+      <pubDate>Fri, 23 Feb 2024 21:51:26 +0545</pubDate>
+      
+      <guid>https://rena.github.io/about/</guid>
+      <description>Hey There!
+Welcome to my website.
+I am Rijan but prefer to go by rena.
+I like books,&amp;hellip; computers,&amp;hellip; taking pictures&amp;hellip; and that is all I can think up for now&amp;hellip;
+As time goes on, this website will grow alongside me.
+So, maybe check in after a few years or so, and perhaps I will have something more interesting to show to you then&amp;hellip;</description>
+    </item>
+    
+  </channel>
+</rss>
