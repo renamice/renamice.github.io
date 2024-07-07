@@ -1,27 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>rena mice.</title>
-    <link>http://localhost:1313/</link>
-    <description>Recent content on rena mice.</description>
+    <title>Rust on rena mice.</title>
+    <link>http://localhost:1313/tags/rust/</link>
+    <description>Recent content in Rust on rena mice.</description>
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
     <lastBuildDate>Sun, 07 Jul 2024 14:18:12 +0545</lastBuildDate>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/rust/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Password Generator: Backend</title>
       <link>http://localhost:1313/projects/password-generator-backend/</link>
       <pubDate>Sun, 07 Jul 2024 14:18:12 +0545</pubDate>
       <guid>http://localhost:1313/projects/password-generator-backend/</guid>
       <description>For quite a while now, I wanted to learn Rust. I tried the online book, but I haven&amp;rsquo;t finished it till now, instead, after learning what I thought to be enough basics, I recreated my old terminal program into this web-based API just to see if I can use it or not.&#xA;Rust actually provides a code snippet for this in their cookbook. There is even a crate for this exact purpose, and their code snippet is far better than mine.</description>
-    </item>
-    <item>
-      <title>about</title>
-      <link>http://localhost:1313/about/</link>
-      <pubDate>Fri, 23 Feb 2024 21:51:26 +0545</pubDate>
-      <guid>http://localhost:1313/about/</guid>
-      <description>Hey There!&#xA;I&amp;rsquo;m Rena.&#xA;Rena isn&amp;rsquo;t my actual name, it&amp;rsquo;s the handle I like to go by in the internet.&#xA;I am interested in the theory and foundations regarding the workings of a computer system; the low-level, 0s and 1s. I enjoy exploring new topics and learning more as I go through my life.&#xA;Besides CS, I am also interested in photography and reading books. I have captured pictures of various subjects (only some of which have seen the light of the internet); I upload them at my instagram.</description>
     </item>
   </channel>
 </rss>

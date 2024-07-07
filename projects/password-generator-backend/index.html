@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="">
+<meta name="description" content="For quite a while now, I wanted to learn Rust. I tried the online book, but I haven&amp;rsquo;t finished it till now, instead, after learning what I thought to be enough basics, I recreated my old terminal program into this web-based API just to see if I can use it or not.
+Rust actually provides a code snippet for this in their cookbook. There is even a crate for this exact purpose, and their code snippet is far better than mine." />
+<meta name="keywords" content="homepage, blog, rena, rena mice, Actix, API, Backend, Rust" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="" />
+<link rel="canonical" href="http://localhost:1313/projects/password-generator-backend/" />
+
+
+    <title>
+        
+            Password Generator: Backend :: rena mice. 
+        
+    </title>
+
+
+
+
+
+<link rel="stylesheet" href="/main.b4328b0f40ef7c27e986ba487d70f726e0e986707ce40c26f3112ac333938855.css" integrity="sha256-tDKLD0DvfCfphrpIfXD3JuDphnB85Awm8xEqwzOTiFU=">
+
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <meta name="msapplication-TileColor" content="">
+
+
+
+  <meta itemprop="name" content="Password Generator: Backend">
+  <meta itemprop="description" content="For quite a while now, I wanted to learn Rust. I tried the online book, but I haven’t finished it till now, instead, after learning what I thought to be enough basics, I recreated my old terminal program into this web-based API just to see if I can use it or not.
+Rust actually provides a code snippet for this in their cookbook. There is even a crate for this exact purpose, and their code snippet is far better than mine.">
+  <meta itemprop="datePublished" content="2024-07-07T14:18:12+05:45">
+  <meta itemprop="dateModified" content="2024-07-07T14:18:12+05:45">
+  <meta itemprop="wordCount" content="1168">
+  <meta itemprop="image" content="http://localhost:1313/">
+  <meta itemprop="keywords" content="Actix,API,Backend,Rust">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="http://localhost:1313/">
+  <meta name="twitter:title" content="Password Generator: Backend">
+  <meta name="twitter:description" content="For quite a while now, I wanted to learn Rust. I tried the online book, but I haven’t finished it till now, instead, after learning what I thought to be enough basics, I recreated my old terminal program into this web-based API just to see if I can use it or not.
+Rust actually provides a code snippet for this in their cookbook. There is even a crate for this exact purpose, and their code snippet is far better than mine.">
+
+
+
+    <meta property="og:url" content="http://localhost:1313/projects/password-generator-backend/">
+  <meta property="og:site_name" content="rena mice.">
+  <meta property="og:title" content="Password Generator: Backend">
+  <meta property="og:description" content="For quite a while now, I wanted to learn Rust. I tried the online book, but I haven’t finished it till now, instead, after learning what I thought to be enough basics, I recreated my old terminal program into this web-based API just to see if I can use it or not.
+Rust actually provides a code snippet for this in their cookbook. There is even a crate for this exact purpose, and their code snippet is far better than mine.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="projects">
+    <meta property="article:published_time" content="2024-07-07T14:18:12+05:45">
+    <meta property="article:modified_time" content="2024-07-07T14:18:12+05:45">
+    <meta property="article:tag" content="Actix">
+    <meta property="article:tag" content="API">
+    <meta property="article:tag" content="Backend">
+    <meta property="article:tag" content="Rust">
+    <meta property="og:image" content="http://localhost:1313/">
+
+
+
+
+
+
+    <meta property="article:published_time" content="2024-07-07 14:18:12 &#43;0545 &#43;0545" />
+
+
+
+
+
+
+
+
+
+
+
+    </head>
+
+    
+        <body>
+    
+    
+        <div class="container">
+            <header class="header">
+    <span class="header__inner">
+        <a href="/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text ">
+                hello</span>
+            <span class="logo__cursor" style=
+                  "
+                   
+                   ">
+            </span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="/about">about</a></li><li><a href="/projects">projects</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+    <main class="post">
+
+        <div class="post-info">
+            
+            </p>
+        </div>
+
+        <article>
+            <h2 class="post-title"><a href="http://localhost:1313/projects/password-generator-backend/">Password Generator: Backend</a></h2>
+
+            
+            
+            
+
+            <div class="post-content">
+                <p>For quite a while now, I wanted to learn Rust. I tried the online book, but I haven&rsquo;t finished it till now, instead, after learning what I thought to be enough basics, I recreated my old terminal program into this web-based API just to see if I can use it or not.</p>
+<p>Rust actually provides a <a href="https://rust-lang-nursery.github.io/rust-cookbook/algorithms/randomness.html#create-random-passwords-from-a-set-of-alphanumeric-characters">code snippet</a> for this in their <a href="https://rust-lang-nursery.github.io/rust-cookbook/intro.html">cookbook</a>. There is even a <a href="https://docs.rs/passwords/latest/passwords/">crate</a> for this exact purpose, and their code snippet is far better than mine. Mine looks horrendous and I am just happy that it is working; I did this only for learning purpose.</p>
+<p>My implementation utilizes multithreading in hopes that it will generate &ldquo;random&rdquo; passwords randomly.</p>
+<p>This is only the backend of the <a href="https://github.com/renamice/Password-Generator">Password Generator</a> project.
+I have no idea regarding the frontend of this thing.</p>
+<hr>
+<h2 id="the-foundation">The Foundation</h2>
+<p>Starting off, I created a git branch <code>password_generator-experimental</code>. Here I put together the foundation for this project. The functionality responsible for generating passwords was all in a single file.</p>
+<p>The <code>rand</code> crate is the core of this project.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-rust" data-lang="rust"><span style="display:flex;"><span><span style="color:#66d9ef">use</span> rand::Rng;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">use</span> rand::seq::SliceRandom;
+</span></span></code></pre></div><p>This is the structure that I ended up using to make things easier:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-rust" data-lang="rust"><span style="display:flex;"><span><span style="color:#66d9ef">struct</span> <span style="color:#a6e22e">Set</span> {
+</span></span><span style="display:flex;"><span>    characters: String,
+</span></span><span style="display:flex;"><span>    length: <span style="color:#66d9ef">u32</span>,
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">impl</span> Set {
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">/// Creates a new Set.
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74"></span>    <span style="color:#66d9ef">fn</span> <span style="color:#a6e22e">new</span>(characters: String, length: <span style="color:#66d9ef">u32</span>) -&gt; <span style="color:#a6e22e">Set</span> {
+</span></span><span style="display:flex;"><span>        Set { characters: <span style="color:#a6e22e">characters</span>, length: <span style="color:#a6e22e">length</span> }
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>This function, as the name suggests, is responsible for creating password, this function envokes another function, <code>retreive</code>, discussed below.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-rust" data-lang="rust"><span style="display:flex;"><span><span style="color:#66d9ef">fn</span> <span style="color:#a6e22e">create_pass</span>(length: <span style="color:#66d9ef">u32</span>, put_numbers: <span style="color:#66d9ef">bool</span>, put_symbols: <span style="color:#66d9ef">bool</span>) -&gt; String {
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// lower and upper cases are by default
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#66d9ef">let</span> lower_alphabets <span style="color:#f92672">=</span> String::from(<span style="color:#e6db74">&#34;abcdefghijklmnopqrstuvwxyz&#34;</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">let</span> upper_alphabets <span style="color:#f92672">=</span> String::from(<span style="color:#e6db74">&#34;ABCDEFGHIJKLMNOPQRSTUVWXYZ&#34;</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">let</span> numbers <span style="color:#f92672">=</span> String::from(<span style="color:#e6db74">&#34;0123456789&#34;</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">let</span> symbols <span style="color:#f92672">=</span> String::from(<span style="color:#e6db74">&#34;!&amp;</span><span style="color:#ae81ff">\&#34;</span><span style="color:#e6db74">;#$%&amp;&#39;()*+,-./:;&lt;=&gt;?@[</span><span style="color:#ae81ff">\\</span><span style="color:#e6db74">]^_`{|}~&#34;</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">let</span> <span style="color:#66d9ef">mut</span> options <span style="color:#f92672">=</span> vec![
+</span></span><span style="display:flex;"><span>        Set::new(lower_alphabets, <span style="color:#ae81ff">26</span>),
+</span></span><span style="display:flex;"><span>        Set::new(upper_alphabets, <span style="color:#ae81ff">26</span>),
+</span></span><span style="display:flex;"><span>    ];
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> put_numbers {
+</span></span><span style="display:flex;"><span>        options.push(Set::new(numbers, <span style="color:#ae81ff">10</span>));
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> put_symbols {
+</span></span><span style="display:flex;"><span>        options.push(Set::new(symbols, <span style="color:#ae81ff">34</span>));
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">let</span> <span style="color:#66d9ef">mut</span> password <span style="color:#f92672">=</span> String::from(<span style="color:#e6db74">&#34;&#34;</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> _i <span style="color:#66d9ef">in</span> <span style="color:#ae81ff">1</span><span style="color:#f92672">..</span>length {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">let</span> set: <span style="color:#66d9ef">&amp;</span><span style="color:#a6e22e">Set</span> <span style="color:#f92672">=</span> options.choose(<span style="color:#f92672">&amp;</span><span style="color:#66d9ef">mut</span> rand::thread_rng()).unwrap();
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">let</span> character: <span style="color:#66d9ef">char</span> <span style="color:#f92672">=</span> retreive(set);
+</span></span><span style="display:flex;"><span>        password.push_str(<span style="color:#f92672">&amp;</span>character.to_string());
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> password;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>This function uses the <code>rand</code> crate to generate two things:</p>
+<ol>
+<li>An index for the character set.</li>
+<li>A boolean.
+It chooses the generated index if and only if the boolean is true, if the boolean is generated false, it discards that index and chooses a index.</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-rust" data-lang="rust"><span style="display:flex;"><span><span style="color:#66d9ef">fn</span> <span style="color:#a6e22e">retreive</span>(character_set: <span style="color:#66d9ef">&amp;</span><span style="color:#a6e22e">Set</span>) -&gt; <span style="color:#66d9ef">char</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// returns the character at a random index
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#66d9ef">let</span> index <span style="color:#f92672">=</span> rand::thread_rng().gen_range(<span style="color:#ae81ff">0</span><span style="color:#f92672">..</span>character_set.length);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">let</span> <span style="color:#66d9ef">mut</span> choice: <span style="color:#66d9ef">char</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39; &#39;</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">loop</span> {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">let</span> <span style="color:#66d9ef">mut</span> count: <span style="color:#66d9ef">u32</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>;
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">for</span> element <span style="color:#66d9ef">in</span> character_set.characters.chars() {
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">if</span> count <span style="color:#f92672">==</span> index {
+</span></span><span style="display:flex;"><span>                choice <span style="color:#f92672">=</span> element;
+</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">break</span>;
+</span></span><span style="display:flex;"><span>            }
+</span></span><span style="display:flex;"><span>            count <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>;
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">// decied weather to choose the currently selected item or not
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        <span style="color:#66d9ef">let</span> choose: <span style="color:#66d9ef">bool</span> <span style="color:#f92672">=</span> rand::random();
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> choose <span style="color:#f92672">==</span> <span style="color:#66d9ef">true</span> {
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">return</span> choice;
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><hr>
+<h2 id="multithreading">Multithreading</h2>
+<p>After the base functionality was working, I created another branch <code>multithread</code> and implementd multithreading.<br>
+The only reason I did that was because I wanted to increase the randomness while generating a string of random characters.</p>
+<p>I used the standard library for this feature:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-rust" data-lang="rust"><span style="display:flex;"><span><span style="color:#66d9ef">use</span> std::{
+</span></span><span style="display:flex;"><span>    sync::{Arc, Mutex},
+</span></span><span style="display:flex;"><span>    thread,
+</span></span><span style="display:flex;"><span>};
+</span></span></code></pre></div><p>The only functionality affected on this addition was the <code>retreive</code> function.<br>
+The function now generated the random index and the random boolean at the same time in two different threads. My idea is that, even though the random module&rsquo;s randomness might be psudo-random, the processing of threads is sure to be random, it isn&rsquo;t clear which thread might complete first, so by doing this, I hoped to increase the randomness.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-rust" data-lang="rust"><span style="display:flex;"><span><span style="color:#66d9ef">fn</span> <span style="color:#a6e22e">retreive</span>(character_set: <span style="color:#66d9ef">&amp;</span><span style="color:#a6e22e">Set</span>) -&gt; <span style="color:#66d9ef">char</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">let</span> set <span style="color:#f92672">=</span> <span style="color:#f92672">&amp;</span>character_set.characters;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">let</span> length: <span style="color:#66d9ef">u32</span> <span style="color:#f92672">=</span> character_set.length;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">let</span> index <span style="color:#f92672">=</span> Arc::new(Mutex::new(<span style="color:#ae81ff">0</span>));
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">let</span> choice <span style="color:#f92672">=</span> Arc::new(Mutex::new(<span style="color:#66d9ef">false</span>));
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">loop</span> {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">let</span> index_clone <span style="color:#f92672">=</span> Arc::clone(<span style="color:#f92672">&amp;</span>index);
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">let</span> choice_clone <span style="color:#f92672">=</span> Arc::clone(<span style="color:#f92672">&amp;</span>choice);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">let</span> choosing <span style="color:#f92672">=</span> thread::spawn( <span style="color:#66d9ef">move</span> <span style="color:#f92672">||</span> {
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">let</span> num <span style="color:#f92672">=</span> rand::thread_rng().gen_range(<span style="color:#ae81ff">0</span><span style="color:#f92672">..=</span>length);
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">let</span> <span style="color:#66d9ef">mut</span> value <span style="color:#f92672">=</span> index_clone.lock().unwrap();
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">*</span>value <span style="color:#f92672">=</span> num;
+</span></span><span style="display:flex;"><span>        });
+</span></span><span style="display:flex;"><span>        
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">let</span> deciding <span style="color:#f92672">=</span> thread::spawn( <span style="color:#66d9ef">move</span> <span style="color:#f92672">||</span> {
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">let</span> choose: <span style="color:#66d9ef">bool</span> <span style="color:#f92672">=</span> rand::random();
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">let</span> <span style="color:#66d9ef">mut</span> value <span style="color:#f92672">=</span> choice_clone.lock().unwrap();
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">*</span>value <span style="color:#f92672">=</span> choose;
+</span></span><span style="display:flex;"><span>        });
+</span></span><span style="display:flex;"><span>        
+</span></span><span style="display:flex;"><span>        choosing.join().unwrap();
+</span></span><span style="display:flex;"><span>        deciding.join().unwrap();
+</span></span><span style="display:flex;"><span>        
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">let</span> index <span style="color:#f92672">=</span> <span style="color:#f92672">*</span>index.lock().unwrap();
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">let</span> choice <span style="color:#f92672">=</span> <span style="color:#f92672">*</span>choice.lock().unwrap();
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> choice {
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">return</span> itereate(set, index);
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>The function ended up getting to long, so I created another function for the selection of the chosen index&rsquo;s item.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-rust" data-lang="rust"><span style="display:flex;"><span><span style="color:#66d9ef">fn</span> <span style="color:#a6e22e">itereate</span>(list: <span style="color:#66d9ef">&amp;</span>String, index: <span style="color:#66d9ef">u32</span>) -&gt; <span style="color:#66d9ef">char</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">let</span> <span style="color:#66d9ef">mut</span> count: <span style="color:#66d9ef">u32</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">let</span> <span style="color:#66d9ef">mut</span> element: <span style="color:#66d9ef">char</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39; &#39;</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> item <span style="color:#66d9ef">in</span> list.chars() {
+</span></span><span style="display:flex;"><span>        element <span style="color:#f92672">=</span> item;
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> count <span style="color:#f92672">==</span> index { <span style="color:#66d9ef">break</span>; }
+</span></span><span style="display:flex;"><span>        count <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> element;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p><em>It also might be worth noting that: while testing, the function would sometimes return empty <code>char</code> as initaliazed.<br>
+I didn&rsquo;t know why this was the case so I decided to update the value of <code>element</code> in each itteration, thus, making sure that it wouldn&rsquo;t return any empty <code>char</code>.
+I still have no idea, however, on why it was returning the <code>char</code> as initialized in the first place.</em></p>
+<hr>
+<h2 id="integrating-into-web">Integrating into web</h2>
+<p>I was initially not sure weather to use <a href="https://actix.rs/">Actix Web</a> or <a href="https://rocket.rs/">Rocket</a>.<br>
+And after not so much thorough research, I just went with actix since it looked cooler. Since, it was my first time doing anything with rust and actix, it took me a fairely long time to get this initial setup up and running.</p>
+<p>I created a new <code>struct</code> for handling the incomming <code>get</code> request.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-rust" data-lang="rust"><span style="display:flex;"><span><span style="color:#66d9ef">use</span> serde::Deserialize;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#[derive(Debug, Deserialize)]</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">struct</span> <span style="color:#a6e22e">Selections</span> {
+</span></span><span style="display:flex;"><span>    length: Option<span style="color:#f92672">&lt;</span><span style="color:#66d9ef">usize</span><span style="color:#f92672">&gt;</span>,
+</span></span><span style="display:flex;"><span>    put_numbers: Option<span style="color:#f92672">&lt;</span><span style="color:#66d9ef">bool</span><span style="color:#f92672">&gt;</span>,
+</span></span><span style="display:flex;"><span>    put_symbols: Option<span style="color:#f92672">&lt;</span><span style="color:#66d9ef">bool</span><span style="color:#f92672">&gt;</span>,
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>I created two functions for the handling of requests:</p>
+<ol>
+<li>For handling an empty request.</li>
+<li>For handling a request with certain selections.</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-rust" data-lang="rust"><span style="display:flex;"><span><span style="color:#75715e">#[get(</span><span style="color:#e6db74">&#34;/&#34;</span><span style="color:#75715e">)]</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">async</span> <span style="color:#66d9ef">fn</span> <span style="color:#a6e22e">hello</span>() -&gt; <span style="color:#a6e22e">impl</span> Responder {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">let</span> password: String <span style="color:#f92672">=</span> create_pass(<span style="color:#ae81ff">30</span>, <span style="color:#66d9ef">true</span>, <span style="color:#66d9ef">true</span>);
+</span></span><span style="display:flex;"><span>    HttpResponse::Ok().body(password)
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#[get(</span><span style="color:#e6db74">&#34;/config&#34;</span><span style="color:#75715e">)]</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">async</span> <span style="color:#66d9ef">fn</span> <span style="color:#a6e22e">config</span>(params: <span style="color:#a6e22e">web</span>::Query<span style="color:#f92672">&lt;</span>Selections<span style="color:#f92672">&gt;</span>) -&gt; <span style="color:#a6e22e">impl</span> Responder {
+</span></span><span style="display:flex;"><span>  handle_selections(params).<span style="color:#66d9ef">await</span>
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">async</span> <span style="color:#66d9ef">fn</span> <span style="color:#a6e22e">handle_selections</span>(params: <span style="color:#a6e22e">web</span>::Query<span style="color:#f92672">&lt;</span>Selections<span style="color:#f92672">&gt;</span>) -&gt; <span style="color:#a6e22e">impl</span> Responder {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">let</span> length <span style="color:#f92672">=</span> params.length.unwrap_or(<span style="color:#ae81ff">16</span>) <span style="color:#66d9ef">as</span> <span style="color:#66d9ef">u32</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">let</span> put_numbers <span style="color:#f92672">=</span> params.put_numbers.unwrap_or(<span style="color:#66d9ef">false</span>);
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">let</span> put_symbols <span style="color:#f92672">=</span> params.put_symbols.unwrap_or(<span style="color:#66d9ef">false</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">let</span> password: String <span style="color:#f92672">=</span> create_pass(length, put_numbers, put_symbols);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  HttpResponse::Ok().json(password)
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><hr>
+<h2 id="refactoring">Refactoring</h2>
+<p>After I confirmed both of it&rsquo;s functionality to be working correctly, I started to refactor the code.
+I distrubuted all the things into a new file structure that I thought to be &ldquo;good-enough&rdquo;.\</p>
+<pre tabindex="0"><code>/src
+|--api/
+|  |--handlers.rs            // endpoints
+|  |--models.rs              // structure for deserializing get request. 
+|  |--routes.rs              // routes
+|  |--mod.rs
+|--utils/
+|  |--generate_password.rs   // the core feature
+|  |--mod.rs
+|--main.rs
+</code></pre><p><em>This is my initial API project and my first properly functioning backend application too.<br>
+Thus, I lack any depth into this file structure as being viable for large applications or not.</em></p>
+<hr>
+<p>I challenged myself to finish this from start till end in a single day, and since this was not that much complex of a project, I did in fact complete this within 24-hours.
+Another reason for the time limit was that, my friend <a href="https://sulavgautam.vercel.app/">Sulav Gautam</a> had asked if I had been doing any projects recently. Not wanting to admit that I was lazing around, I decided to whip this quick project up.</p>
+<p>Even though this was a small project, I feel like I have learned quite a lot, at least way more than just reading the book. There were multiple times where I felt like just throwing this whole thing in the trash but ego one hell of a motivator.</p>
+
+            </div>
+        </article>
+
+        <hr />
+
+        <div class="post-info">
+            
+    <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg>
+
+        <span class="tag"><a href="http://localhost:1313/tags/actix/">Actix</a></span>
+        <span class="tag"><a href="http://localhost:1313/tags/api/">API</a></span>
+        <span class="tag"><a href="http://localhost:1313/tags/backend/">Backend</a></span>
+        <span class="tag"><a href="http://localhost:1313/tags/rust/">Rust</a></span>
+        
+    </p>
+
+            
+  		</div>
+    </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    
+    
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+<script type="text/javascript" src="/bundle.min.85fad2de4f13fec3bcb3b3cb10430cdb44a7b4a9749b32938241a5c6e77718df7624f1002b880521fdc26e24ec1077fda214bf1cb36ee3045510760d09638cae.js" integrity="sha512-hfrS3k8T/sO8s7PLEEMM20SntKl0mzKTgkGlxud3GN92JPEAK4gFIf3CbiTsEHf9ohS/HLNu4wRVEHYNCWOMrg=="></script>
+
+
+
+
+    </body>
+</html>
