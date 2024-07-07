@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>API on rena mice.</title>
-    <link>http://localhost:1313/tags/api/</link>
+    <link>https://renamice.github.io/tags/api/</link>
     <description>Recent content in API on rena mice.</description>
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
     <lastBuildDate>Sun, 07 Jul 2024 14:18:12 +0545</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/api/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://renamice.github.io/tags/api/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Password Generator: Backend</title>
-      <link>http://localhost:1313/projects/password-generator-backend/</link>
+      <link>https://renamice.github.io/projects/password-generator-backend/</link>
       <pubDate>Sun, 07 Jul 2024 14:18:12 +0545</pubDate>
-      <guid>http://localhost:1313/projects/password-generator-backend/</guid>
+      <guid>https://renamice.github.io/projects/password-generator-backend/</guid>
       <description>For quite a while now, I wanted to learn Rust. I tried the online book, but I haven&amp;rsquo;t finished it till now, instead, after learning what I thought to be enough basics, I recreated my old terminal program into this web-based API just to see if I can use it or not.&#xA;Rust actually provides a code snippet for this in their cookbook. There is even a crate for this exact purpose, and their code snippet is far better than mine.</description>
     </item>
   </channel>
