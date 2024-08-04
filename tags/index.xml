@@ -7,8 +7,36 @@
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Mon, 22 Jul 2024 23:05:55 +0545</lastBuildDate>
+    <lastBuildDate>Sun, 04 Aug 2024 15:03:06 +0545</lastBuildDate>
     <atom:link href="https://renamice.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Assembler</title>
+      <link>https://renamice.github.io/tags/assembler/</link>
+      <pubDate>Sun, 04 Aug 2024 15:03:06 +0545</pubDate>
+      <guid>https://renamice.github.io/tags/assembler/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Low Level</title>
+      <link>https://renamice.github.io/tags/low-level/</link>
+      <pubDate>Sun, 04 Aug 2024 15:03:06 +0545</pubDate>
+      <guid>https://renamice.github.io/tags/low-level/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Nand2Tetris</title>
+      <link>https://renamice.github.io/tags/nand2tetris/</link>
+      <pubDate>Sun, 04 Aug 2024 15:03:06 +0545</pubDate>
+      <guid>https://renamice.github.io/tags/nand2tetris/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Rust</title>
+      <link>https://renamice.github.io/tags/rust/</link>
+      <pubDate>Sun, 04 Aug 2024 15:03:06 +0545</pubDate>
+      <guid>https://renamice.github.io/tags/rust/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Books</title>
       <link>https://renamice.github.io/tags/books/</link>
@@ -42,13 +70,6 @@
       <link>https://renamice.github.io/tags/backend/</link>
       <pubDate>Sun, 07 Jul 2024 14:18:12 +0545</pubDate>
       <guid>https://renamice.github.io/tags/backend/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Rust</title>
-      <link>https://renamice.github.io/tags/rust/</link>
-      <pubDate>Sun, 07 Jul 2024 14:18:12 +0545</pubDate>
-      <guid>https://renamice.github.io/tags/rust/</guid>
       <description></description>
     </item>
   </channel>

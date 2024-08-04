@@ -1,27 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Rust on rena mice.</title>
-    <link>https://renamice.github.io/tags/rust/</link>
-    <description>Recent content in Rust on rena mice.</description>
+    <title>Low Level on rena mice.</title>
+    <link>https://renamice.github.io/tags/low-level/</link>
+    <description>Recent content in Low Level on rena mice.</description>
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
     <lastBuildDate>Sun, 04 Aug 2024 15:03:06 +0545</lastBuildDate>
-    <atom:link href="https://renamice.github.io/tags/rust/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://renamice.github.io/tags/low-level/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Hack Assembler</title>
       <link>https://renamice.github.io/projects/hack-assembler/</link>
       <pubDate>Sun, 04 Aug 2024 15:03:06 +0545</pubDate>
       <guid>https://renamice.github.io/projects/hack-assembler/</guid>
       <description>Full code can be found at github.&#xA;It had been quite some time since I started off the Nand2Tetris Part I course on coursera. Because I wasn&amp;rsquo;t paying for it I wasn&amp;rsquo;t under the pressure of finishing the assignments but I still wanted to do it anyways but the last week&amp;rsquo;s assignment was kind of a daunting task for some reason.&#xA;They ask you to build an assembler for the hack assembly, which the computer that you build throughout the course utilizes, and they also provide a complete breakdown of the logic, design, and tips on how to approach it.</description>
-    </item>
-    <item>
-      <title>Password Generator: Backend</title>
-      <link>https://renamice.github.io/projects/password-generator-backend/</link>
-      <pubDate>Sun, 07 Jul 2024 14:18:12 +0545</pubDate>
-      <guid>https://renamice.github.io/projects/password-generator-backend/</guid>
-      <description>For quite a while now, I wanted to learn Rust. I tried the online book, but I haven&amp;rsquo;t finished it till now, instead, after learning what I thought to be enough basics, I recreated my old terminal program into this web-based API just to see if I can use it or not.&#xA;Rust actually provides a code snippet for this in their cookbook. There is even a crate for this exact purpose, and their code snippet is far better than mine.</description>
     </item>
   </channel>
 </rss>
