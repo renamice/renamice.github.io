@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Books on rena mice.</title>
-    <link>https://renamice.github.io/books/</link>
+    <link>http://localhost:1313/books/</link>
     <description>Recent content in Books on rena mice.</description>
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
     <lastBuildDate>Mon, 22 Jul 2024 23:05:55 +0545</lastBuildDate>
-    <atom:link href="https://renamice.github.io/books/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/books/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Train to Pakistan</title>
-      <link>https://renamice.github.io/books/train-to-pakistan/</link>
+      <link>http://localhost:1313/books/train-to-pakistan/</link>
       <pubDate>Mon, 22 Jul 2024 23:05:55 +0545</pubDate>
-      <guid>https://renamice.github.io/books/train-to-pakistan/</guid>
+      <guid>http://localhost:1313/books/train-to-pakistan/</guid>
       <description>Author: Khushwant Singh&#xA;The abilit of us humans to unite is an amazing sight to behold, but our ability to separate, or rather unite against, is equally terrifying.&#xA;Author guides us through the events of a village that was torn apart following the India-Pakistan split. The people in the village, even though not wanting anything to do with the seperation, people that just wanted peace, were forced into submission by the two governing bodies; bodies that forced them against their wants, in the name of helping them.</description>
     </item>
   </channel>
