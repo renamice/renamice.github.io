@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+<meta name="author" content="Jan 2, 2006 2006-01-02 2006-01-02 15:04 Jan 2 Website where you can find various posts on different topics that are related to computer science, photography, books, and any other interest of mine.. false false true Hey There! [] homepage, blog, rena, rena mice Rijan Tamang ">
+<meta name="description" content="&lt;!DOCTYPE html&gt; " />
+<meta name="keywords" content="" />
+<meta name="robots" content="noodp" />
+<link rel="canonical" href="http://localhost:1313/presentation-python/" />
+
+
+    <title>
+        
+             :: rena mice. 
+        
+    </title>
+
+
+
+
+
+<link rel="stylesheet" href="http://localhost:1313/main.a452b7e9a5c88b14245c4ba5e0cecac6320b239522568d92e2f204a743ce6f41.css" integrity="sha256-pFK36aXIixQkXEul4M7KxjILI5UiVo2S4vIEp0POb0E=">
+
+
+
+<link rel="apple-touch-icon" sizes="180x180" href="http://localhost:1313/image/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/image/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/image/favicon-16x16.png">
+<link rel="manifest" href="http://localhost:1313/site.webmanifest">
+
+
+  <meta itemprop="name" content="rena mice.">
+  <meta itemprop="description" content="&lt;!DOCTYPE html&gt; ">
+  <meta itemprop="wordCount" content="2">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="rena mice.">
+  <meta name="twitter:description" content="&lt;!DOCTYPE html&gt; ">
+
+
+
+    <meta property="og:url" content="http://localhost:1313/presentation-python/">
+  <meta property="og:site_name" content="rena mice.">
+  <meta property="og:title" content="rena mice.">
+  <meta property="og:description" content="&lt;!DOCTYPE html&gt; ">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </head>
+
+    
+        <body>
+    
+    
+        <div class="container">
+            <header class="header">
+    <span class="header__inner">
+        <a href="http://localhost:1313/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">&gt;</span>
+            <span class="logo__text ">
+                echo &#39;rena&#39;</span>
+            <span class="logo__cursor" style=
+                  "
+                   
+                   ">
+            </span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="http://localhost:1313/about">about</a></li><li><a href="http://localhost:1313/posts">blogs</a></li><li><a href="http://localhost:1313/projects">projects</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+    <main class="post">
+
+        <div class="post-info">
+            
+            </p>
+        </div>
+
+        <article>
+            <h2 class="post-title"><a href="http://localhost:1313/presentation-python/"></a></h2>
+
+            
+            
+            
+
+            <div class="post-content">
+                <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <title></title>
+    <link rel="stylesheet" href="dist/reveal.css" />
+    <link rel="stylesheet" href="dist/theme/blood.css" id="theme" />
+    <link rel="stylesheet" href="plugin/highlight/zenburn.css" />
+	<link rel="stylesheet" href="css/layout.css" />
+	<link rel="stylesheet" href="plugin/customcontrols/style.css">
+
+	<link rel="stylesheet" href="plugin/reveal-pointer/pointer.css" />
+
+
+    <script defer src="dist/fontawesome/all.min.js"></script>
+
+	<script type="text/javascript">
+		var forgetPop = true;
+		function onPopState(event) {
+			if(forgetPop){
+				forgetPop = false;
+			} else {
+				parent.postMessage(event.target.location.href, "app://obsidian.md");
+			}
+        }
+		window.onpopstate = onPopState;
+		window.onmessage = event => {
+			if(event.data == "reload"){
+				window.document.location.reload();
+			}
+			forgetPop = true;
+		}
+
+		function fitElements(){
+			const itemsToFit = document.getElementsByClassName('fitText');
+			for (const item in itemsToFit) {
+				if (Object.hasOwnProperty.call(itemsToFit, item)) {
+					var element = itemsToFit[item];
+					fitElement(element,1, 1000);
+					element.classList.remove('fitText');
+				}
+			}
+		}
+
+		function fitElement(element, start, end){
+
+			let size = (end + start) / 2;
+			element.style.fontSize = `${size}px`;
+
+			if(Math.abs(start - end) < 1){
+				while(element.scrollHeight > element.offsetHeight){
+					size--;
+					element.style.fontSize = `${size}px`;
+				}
+				return;
+			}
+
+			if(element.scrollHeight > element.offsetHeight){
+				fitElement(element, start, size);
+			} else {
+				fitElement(element, size, end);
+			}		
+		}
+
+
+		document.onreadystatechange = () => {
+			fitElements();
+			if (document.readyState === 'complete') {
+				if (window.location.href.indexOf("?export") != -1){
+					parent.postMessage(event.target.location.href, "app://obsidian.md");
+				}
+				if (window.location.href.indexOf("print-pdf") != -1){
+					let stateCheck = setInterval(() => {
+						clearInterval(stateCheck);
+						window.print();
+					}, 250);
+				}
+			}
+	};
+
+
+        </script>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides"><section  data-markdown><script type="text/template"><!-- .slide: class="drop" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 1200px; width: 1920px; min-height: 1200px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+<style>
+.reveal code.python {
+  font-size: 1.5em;
+  line-height: 1.5em;
+}
+
+.reveal code.c {
+  font-size: 1.5em;
+  line-height: 1.5em;
+}
+</style>
+# Hi!
+</div>
+
+<aside class="notes"><p>Hi everyone!
+My name is Rijan Tamang.</p>
+<p>Much like you I also took Sikai IT’s python course and today I aim to share what I’ve learned since then.</p>
+</aside></script></section><section  data-markdown><script type="text/template"><!-- .slide: class="drop" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 1200px; width: 1920px; min-height: 1200px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+<u>**renamice.github.io**</u>
+<iframe width="1920" height="1200" data-src="https://renamice.github.io" data-preload></iframe>
+</div>
+
+<aside class="notes"><p>You can find me on github as renamice or you can check out my site at renamice.github.io.
+I hope you all can learn some new things from presentation:)</p>
+</aside></script></section><section ><section data-markdown><script type="text/template"><!-- .slide: class="drop" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 1200px; width: 1920px; min-height: 1200px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+<img src="01 - Projects/Sikai IT - Python presentation/images/python-logo.png" alt="" style="width: 600px; object-fit: fill">
+
+## Python
+</div>
+
+<aside class="notes"><p>High-level, general-purpose.
+Design philosophy emphasizes readability.
+Multiple programming paradigms:
+    structured, object oriented, and functional</p>
+<p>There are mainly two different versions in use nowadays.</p>
+<p>I will not be getting into the specifics of the differences but it is useful to keep a note that code written in either of the two versions isn’t compatible on the other.</p>
+</aside></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 1200px; width: 1920px; min-height: 1200px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+## Creator
+<img src="01 - Projects/Sikai IT - Python presentation/images/Guido van Rossum.jpg" alt="" style="width: 500px; object-fit: fill">
+
+Guido van Rossum
+</div>
+
+<aside class="notes"><p>Python was invented in the late 1980s by Guido van Rossum at CWI in the Netherlands as a successor to the ABC programming language.</p>
+<p>He was the only person responsible for the language till 2018.</p>
+</aside></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 1200px; width: 1920px; min-height: 1200px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+## Popularity
+
+<img src="01 - Projects/Sikai IT - Python presentation/images/trend.png" alt="" style="width: 700px; object-fit: fill">
+</div>
+
+<aside class="notes"><p>python has been consistently rising in popularity for the past decade as shown by the increasing frequency of questions regarding it.</p>
+</aside></script></section></section><section  data-markdown><script type="text/template"><!-- .slide: class="drop" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 1200px; width: 1920px; min-height: 1200px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+## Why Python?
+</div>
+
+<aside class="notes"><p>But the thing that I really want to talk about today is: ‘why python?’</p>
+</aside></script></section><section ><section data-markdown><script type="text/template"><!-- .slide: class="drop" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 1200px; width: 1920px; min-height: 1200px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+## Simplicity
+</div>
+
+<aside class="notes"><p>Python is beginner-friendly and has less complexity as compared to a language like Java.
+Its simplicity is also the reason many startups like Instagram, Dropbox, and YouTube started with Python.</p>
+<p>python code is easy to read.
+It isn’t intimidating, nor is it too lengthy.</p>
+</aside></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 1200px; width: 1920px; min-height: 1200px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+> I just write pseudocode and it somehow works.
+
+\- Programmers are also human, 2022
+</div>
+
+<aside class="notes"><p>python also has user friendly data types</p>
+<p>Natural Language Style</p>
+</aside></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 1200px; width: 1920px; min-height: 1200px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+Take a look as this C code
+```c
+int main() {
+	int a = 'a';
+	return 0;
+}
+```
+In C there are no ‘chars’ and this can often be confusing for beginners.\
+Representing Strings is even complicated.
+</div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" data-auto-animate="true" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 1200px; width: 1920px; min-height: 1200px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+In python it’s quite easy...
+```python
+string1    = 'a'
+string2    = "string"
+number     = 12
+decimal    = 1.2
+lists      = []
+tuples     = ()
+dictionary = {}
+# ... and plenty others
+```
+Python offers easy to work with data types.
+</div>
+
+<aside class="notes"><p>you don’t have to scratch your head around trying to implement these data types your self.
+they are already there and very easy to use.</p>
+</aside></script></section></section><section ><section data-markdown><script type="text/template"><!-- .slide: class="drop" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 1200px; width: 1920px; min-height: 1200px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+## Libraries
+</div>
+
+<aside class="notes"><p>Python’s standard library and the wide array of third-party packages make it one of the most versatile programming languages available.</p>
+<p>as for the standard library</p>
+</aside></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 1200px; width: 1920px; min-height: 1200px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+## Standard Library
+
+<img src="01 - Projects/Sikai IT - Python presentation/images/python_standard_libraries.webp" alt="" style="object-fit: scale-down">
+</div>
+
+<aside class="notes"><p>Even the standard library is pretty extensive in what it can do:</p>
+<ol>
+<li>file I/O</li>
+<li>regular expressions</li>
+<li>bunch of data types</li>
+<li>working with the os</li>
+</ol>
+<p>beyond this Python has a big ecosystem of third-party libraries and framework.</p>
+</aside></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 1200px; width: 1920px; min-height: 1200px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+## Web Development
+
+<split even gap=2>
+<img src="01 - Projects/Sikai IT - Python presentation/images/django.png" alt="" style="width: 400px; object-fit: fill">
+
+<img src="01 - Projects/Sikai IT - Python presentation/images/flask.png" alt="" style="width: 400px; object-fit: fill">
+
+</split>
+</div>
+
+<aside class="notes"><p>django and flask are popular frameworks for web development</p>
+<p>and AI is pretty popular nowadays.
+there are even libraries for that</p>
+</aside></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 1200px; width: 1920px; min-height: 1200px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+## Machine Learning
+
+<split even gap = 2>
+<img src="01 - Projects/Sikai IT - Python presentation/images/numpy.png" alt="" style="width: 300px; object-fit: fill">
+
+<img src="01 - Projects/Sikai IT - Python presentation/images/tensorflow.png" alt="" style="width: 250px; object-fit: fill">
+
+</split>
+</div>
+
+<aside class="notes"><ul>
+<li><p>numpy</p>
+</li>
+<li><p>tensorflow</p>
+</li>
+<li><p>pandas</p>
+</li>
+<li><p>pytorch</p>
+</li>
+<li><p>scikit</p>
+</li>
+</ul>
+<p>the point is you if you want to do something, there probably is already a library for it.</p>
+</aside></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 1200px; width: 1920px; min-height: 1200px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+Be careful!
+</div>
+
+<aside class="notes"><p>not all libraries are created equally.
+not all libraries might be safe.</p>
+<p>example: malicious npm packages
+don’t trust just any library.</p>
+</aside></script></section></section><section  data-markdown><script type="text/template"><!-- .slide: class="drop" data-auto-animate="true" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 1200px; width: 1920px; min-height: 1200px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+## Compatibility
+</div>
+
+<aside class="notes"><p>code written on one operating system can often run on another without modification.</p>
+<p>Windows, macOS, Linux, and even some mobile platforms</p>
+<p>Platform Independent
+Python abstracts away many of the platform-specific details, providing a consistent interface for developers.</p>
+<p>Deployment
+run Python code on multiple platforms without modification
+easier to deploy applications across different systems</p>
+</aside></script></section><section ><section data-markdown><script type="text/template"><!-- .slide: class="drop" data-auto-animate="true" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 1200px; width: 1920px; min-height: 1200px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+## Disadvantages
+</div>
+
+<aside class="notes"><p>multiple disadvantages
+briefly about 3</p>
+</aside></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" data-auto-animate="true" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 1200px; width: 1920px; min-height: 1200px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+## Disadvantages
+
+-  Slower Execution Speed
+-  Global Interpreter Lock (GIL)<!-- .element: class="fragment" data-fragment-index="1" -->
+-  Memory Consumption<!-- .element: class="fragment" data-fragment-index="2" -->
+</div>
+
+<aside class="notes"><p>1:
+interpreted language =&gt; slower compared to compiled languages like C or Java.
+disadvantage for performance-critical applications where speed is a key factor.</p>
+<p>2:
+Python’s GIL can be a bottleneck in multi-threaded programs.
+only one thread executes Python bytecode at a time
+limits the performance of CPU-bound multi-threaded applications.</p>
+<p>3:
+dynamic nature =&gt; higher memory usage. 
+concern for handling large amounts of data
+bad for memory-constrained environments.</p>
+</aside></script></section></section><section ><section data-markdown><script type="text/template"><!-- .slide: class="drop" data-auto-animate="true" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 1200px; width: 1920px; min-height: 1200px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+## My projects
+</div>
+
+<aside class="notes"><p>With my projects, I aim to show you how simple it can be to get things done.</p>
+<p>But just because things are simpler to do in python, it doesn’t mean that every project will be completed in short amount of time too.</p>
+<p>Complex projects still take time.</p>
+</aside></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" data-auto-animate="true" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 1200px; width: 1920px; min-height: 1200px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+## My projects
+
+- Password Generator
+- TODO App
+</div>
+
+<aside class="notes"><p>Disclamer: these are just simple prototypes that i put together in just a couple of hours.</p>
+<p>the code might not be the best and they contain a lot of failure points but that is also the reason why I chose python to create these demos in.</p>
+<p>with python I don’t have to worry about things like satisfying all the possible break points like in Rust.
+I also don’t have to worry about memory leaks like with C.</p>
+<p>not the best code out there.</p>
+<ol>
+<li>&shy;<!-- .element: class="fragment" data-fragment-index="1" -->web application for generating passwords</li>
+<li>&shy;<!-- .element: class="fragment" data-fragment-index="2" -->cli todo app</li>
+</ol>
+</aside></script></section></section><section  data-markdown><script type="text/template"><!-- .slide: class="drop" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 1200px; width: 1920px; min-height: 1200px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+<!--empty slide-->
+</div>
+
+<aside class="notes"><p>show the projects now</p>
+</aside></script></section><section  data-markdown><script type="text/template"><!-- .slide: class="drop" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 1200px; width: 1920px; min-height: 1200px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+## Thank you
+</div></script></section></div>
+    </div>
+
+    <script src="dist/reveal.js"></script>
+
+    <script src="plugin/markdown/markdown.js"></script>
+    <script src="plugin/highlight/highlight.js"></script>
+    <script src="plugin/zoom/zoom.js"></script>
+    <script src="plugin/notes/notes.js"></script>
+    <script src="plugin/math/math.js"></script>
+	<script src="plugin/mermaid/mermaid.js"></script>
+	<script src="plugin/chart/chart.min.js"></script>
+	<script src="plugin/chart/plugin.js"></script>
+	<script src="plugin/customcontrols/plugin.js"></script>
+	<script src="plugin/reveal-pointer/pointer.js"></script>
+
+    <script>
+      function extend() {
+        var target = {};
+        for (var i = 0; i < arguments.length; i++) {
+          var source = arguments[i];
+          for (var key in source) {
+            if (source.hasOwnProperty(key)) {
+              target[key] = source[key];
+            }
+          }
+        }
+        return target;
+      }
+
+	  function isLight(color) {
+		let hex = color.replace('#', '');
+
+		// convert #fff => #ffffff
+		if(hex.length == 3){
+			hex = `${hex[0]}${hex[0]}${hex[1]}${hex[1]}${hex[2]}${hex[2]}`;
+		}
+
+		const c_r = parseInt(hex.substr(0, 2), 16);
+		const c_g = parseInt(hex.substr(2, 2), 16);
+		const c_b = parseInt(hex.substr(4, 2), 16);
+		const brightness = ((c_r * 299) + (c_g * 587) + (c_b * 114)) / 1000;
+		return brightness > 155;
+	}
+
+	var bgColor = getComputedStyle(document.documentElement).getPropertyValue('--r-background-color').trim();
+	var isLight = isLight(bgColor);
+
+	if(isLight){
+		document.body.classList.add('has-light-background');
+	} else {
+		document.body.classList.add('has-dark-background');
+	}
+
+      // default options to init reveal.js
+      var defaultOptions = {
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+        transition: 'default', // none/fade/slide/convex/concave/zoom
+        plugins: [
+          RevealMarkdown,
+          RevealHighlight,
+          RevealZoom,
+          RevealNotes,
+          RevealMath.MathJax3,
+		  RevealMermaid,
+		  RevealChart,
+		  RevealCustomControls,
+	      RevealPointer,
+        ],
+
+
+    	allottedTime: 120 * 1000,
+
+		mathjax3: {
+			mathjax: 'plugin/math/mathjax/tex-mml-chtml.js',
+		},
+		markdown: {
+		  gfm: true,
+		  mangle: true,
+		  pedantic: false,
+		  smartLists: false,
+		  smartypants: false,
+		},
+
+		mermaid: {
+			theme: isLight ? 'default' : 'dark',
+		},
+
+		customcontrols: {
+			controls: [
+			]
+		},
+      };
+
+      // options from URL query string
+      var queryOptions = Reveal().getQueryHash() || {};
+
+      var options = extend(defaultOptions, {"width":1920,"height":1200,"margin":0,"controls":false,"progress":true,"slideNumber":false,"transition":"slide","transitionSpeed":"default"}, queryOptions);
+    </script>
+
+    <script>
+      Reveal.initialize(options);
+    </script>
+  </body>
+
+  <!-- created with Advanced Slides -->
+</html>
+
+            </div>
+        </article>
+
+        <hr />
+
+        <div class="post-info">
+            
+            
+  		</div>
+    </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>&copy; 2023</span>
+            <span><a href="http://localhost:1313/">Rijan Tamang</a></span>
+            <span><a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a></span>
+            
+            
+        </div>
+    </div>
+    
+    
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+<script type="text/javascript" src="http://localhost:1313/bundle.min.caa9b3ccd5c68f397c68375336ced13a71a02ff8204ed62f9250b1e0ea5fdd0e09364124ccbfd7d81e9c12f7efeeb57237359933995a7fd31ed617e20d15afe5.js" integrity="sha512-yqmzzNXGjzl8aDdTNs7ROnGgL/ggTtYvklCx4Opf3Q4JNkEkzL/X2B6cEvfv7rVyNzWZM5laf9Me1hfiDRWv5Q=="></script>
+
+
+
+
+    </body>
+</html>
