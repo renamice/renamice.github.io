@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Rust on rena</title>
+    <link>https://renamice.github.io/tags/rust/</link>
+    <description>Recent content in Rust on rena</description>
+    <generator>Hugo -- 0.143.1</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 07 Jul 2024 14:18:12 +0545</lastBuildDate>
+    <atom:link href="https://renamice.github.io/tags/rust/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Password Generator: Backend</title>
+      <link>https://renamice.github.io/posts/password-generator-backend/</link>
+      <pubDate>Sun, 07 Jul 2024 14:18:12 +0545</pubDate>
+      <guid>https://renamice.github.io/posts/password-generator-backend/</guid>
+      <description>A simple multithreaded password generator backend api in rust.</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://renamice.github.io/sitemap.xml
