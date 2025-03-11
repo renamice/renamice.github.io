@@ -4,10 +4,21 @@
     <title>rena</title>
     <link>https://renamice.github.io/</link>
     <description>Recent content on rena</description>
-    <generator>Hugo -- 0.143.1</generator>
+    <generator>Hugo -- 0.145.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 07 Jul 2024 14:18:12 +0545</lastBuildDate>
+    <lastBuildDate>Tue, 11 Mar 2025 13:41:37 +0545</lastBuildDate>
     <atom:link href="https://renamice.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Neural Networks in JS.</title>
+      <link>https://renamice.github.io/posts/nn_in_js/</link>
+      <pubDate>Tue, 11 Mar 2025 13:41:37 +0545</pubDate>
+      <guid>https://renamice.github.io/posts/nn_in_js/</guid>
+      <description>&lt;h1 id=&#34;blog---neural-networks-in-js&#34;&gt;Blog - Neural Networks in JS&lt;/h1&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Disclaimer&lt;/strong&gt;: This is a &lt;em&gt;failed&lt;/em&gt; experiment; well, kind of.&lt;/p&gt;
+&lt;p&gt;&amp;ldquo;Lord God, I have committed a sin.&amp;rdquo;&lt;br&gt;
+I have done yet another thing that JS was not truly made for. Or maybe it was. I guess that was a good hook into the story of how I coded a neural networks in JS. And unlike other people&amp;rsquo;s blogs this one is literal. Others, for good reasons, display not only their neural networks but also their algorithms to train them, and also showcase their use-case. Not this one, this one is literal, and is only about the creation of Neural Networks; nothing more, nothing less.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Password Generator: Backend</title>
       <link>https://renamice.github.io/posts/password-generator-backend/</link>

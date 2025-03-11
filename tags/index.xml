@@ -4,10 +4,24 @@
     <title>Tags on rena</title>
     <link>https://renamice.github.io/tags/</link>
     <description>Recent content in Tags on rena</description>
-    <generator>Hugo -- 0.143.1</generator>
+    <generator>Hugo -- 0.145.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 07 Jul 2024 14:18:12 +0545</lastBuildDate>
+    <lastBuildDate>Tue, 11 Mar 2025 13:41:37 +0545</lastBuildDate>
     <atom:link href="https://renamice.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AI/ML</title>
+      <link>https://renamice.github.io/tags/ai/ml/</link>
+      <pubDate>Tue, 11 Mar 2025 13:41:37 +0545</pubDate>
+      <guid>https://renamice.github.io/tags/ai/ml/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Computer Science</title>
+      <link>https://renamice.github.io/tags/computer-science/</link>
+      <pubDate>Tue, 11 Mar 2025 13:41:37 +0545</pubDate>
+      <guid>https://renamice.github.io/tags/computer-science/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Actix</title>
       <link>https://renamice.github.io/tags/actix/</link>
@@ -27,6 +41,13 @@
       <link>https://renamice.github.io/tags/backend/</link>
       <pubDate>Sun, 07 Jul 2024 14:18:12 +0545</pubDate>
       <guid>https://renamice.github.io/tags/backend/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Project</title>
+      <link>https://renamice.github.io/tags/project/</link>
+      <pubDate>Sun, 07 Jul 2024 14:18:12 +0545</pubDate>
+      <guid>https://renamice.github.io/tags/project/</guid>
       <description></description>
     </item>
     <item>

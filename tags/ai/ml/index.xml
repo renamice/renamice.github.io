@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Posts on rena</title>
-    <link>https://renamice.github.io/posts/</link>
-    <description>Recent content in Posts on rena</description>
+    <title>AI/ML on rena</title>
+    <link>https://renamice.github.io/tags/ai/ml/</link>
+    <description>Recent content in AI/ML on rena</description>
     <generator>Hugo -- 0.145.0</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 11 Mar 2025 13:41:37 +0545</lastBuildDate>
-    <atom:link href="https://renamice.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://renamice.github.io/tags/ai/ml/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Neural Networks in JS.</title>
       <link>https://renamice.github.io/posts/nn_in_js/</link>
@@ -18,13 +18,6 @@
 &lt;p&gt;&lt;strong&gt;Disclaimer&lt;/strong&gt;: This is a &lt;em&gt;failed&lt;/em&gt; experiment; well, kind of.&lt;/p&gt;
 &lt;p&gt;&amp;ldquo;Lord God, I have committed a sin.&amp;rdquo;&lt;br&gt;
 I have done yet another thing that JS was not truly made for. Or maybe it was. I guess that was a good hook into the story of how I coded a neural networks in JS. And unlike other people&amp;rsquo;s blogs this one is literal. Others, for good reasons, display not only their neural networks but also their algorithms to train them, and also showcase their use-case. Not this one, this one is literal, and is only about the creation of Neural Networks; nothing more, nothing less.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Password Generator: Backend</title>
-      <link>https://renamice.github.io/posts/password-generator-backend/</link>
-      <pubDate>Sun, 07 Jul 2024 14:18:12 +0545</pubDate>
-      <guid>https://renamice.github.io/posts/password-generator-backend/</guid>
-      <description>A simple multithreaded password generator backend api in rust.</description>
     </item>
   </channel>
 </rss>
