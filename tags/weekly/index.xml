@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Weekly on rena</title>
+    <link>https://renamice.github.io/tags/weekly/</link>
+    <description>Recent content in Weekly on rena</description>
+    <generator>Hugo -- 0.145.0</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 15 Mar 2025 21:08:52 +0545</lastBuildDate>
+    <atom:link href="https://renamice.github.io/tags/weekly/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Be human.</title>
+      <link>https://renamice.github.io/posts/be_human/</link>
+      <pubDate>Sat, 15 Mar 2025 21:08:52 +0545</pubDate>
+      <guid>https://renamice.github.io/posts/be_human/</guid>
+      <description>Trying to reason about what it means to be &amp;#39;human&amp;#39;.</description>
+    </item>
+  </channel>
+</rss>

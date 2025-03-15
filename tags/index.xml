@@ -6,13 +6,20 @@
     <description>Recent content in Tags on rena</description>
     <generator>Hugo -- 0.145.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 11 Mar 2025 13:41:37 +0545</lastBuildDate>
+    <lastBuildDate>Sat, 15 Mar 2025 21:08:52 +0545</lastBuildDate>
     <atom:link href="https://renamice.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>AI/ML</title>
-      <link>https://renamice.github.io/tags/ai/ml/</link>
+      <title>Weekly</title>
+      <link>https://renamice.github.io/tags/weekly/</link>
+      <pubDate>Sat, 15 Mar 2025 21:08:52 +0545</pubDate>
+      <guid>https://renamice.github.io/tags/weekly/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>AI-ML</title>
+      <link>https://renamice.github.io/tags/ai-ml/</link>
       <pubDate>Tue, 11 Mar 2025 13:41:37 +0545</pubDate>
-      <guid>https://renamice.github.io/tags/ai/ml/</guid>
+      <guid>https://renamice.github.io/tags/ai-ml/</guid>
       <description></description>
     </item>
     <item>
